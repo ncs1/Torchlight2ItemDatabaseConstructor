@@ -11,33 +11,6 @@ ItemDatFileParser::ItemDatFileParser(QString itemDetailsDatabaseFilePath, QObjec
 {
     mItemsTable = new ItemDetailsTable(itemDetailsDatabaseFilePath);
     mNumFilesProcessed = 0;
-
-    mSearchKeys["<STRING>BASEFILE"] = BaseFile;
-    mSearchKeys["<STRING>UNIT_GUID"] = UnitGuid;
-    mSearchKeys["[REQ_CLASS]"] = RequiredClassOpeningTag;
-    mSearchKeys["[/REQ_CLASS]"] = RequiredClassClosingTag;
-    mSearchKeys["<STRING>UNITTYPE"] = UnitType;
-    mSearchKeys["<STRING>NAME"] = Name;
-    mSearchKeys["<TRANSLATE>DISPLAYNAME"] = DisplayName;
-    mSearchKeys["<TRANSLATE>DESCRIPTION"] = Description;
-    mSearchKeys["<INTEGER>STRENGTH_REQUIRED"] = StrengthRequired;
-    mSearchKeys["<INTEGER>DEXTERITY_REQUIRED"] = DexterityRequired;
-    mSearchKeys["<INTEGER>DEFENSE_REQUIRED"] = DefenseRequired;
-    mSearchKeys["<INTEGER>MAGIC_REQUIRED"] = MagicRequired;
-    mSearchKeys["<INTEGER>SPEED"] = Speed;
-    mSearchKeys["<INTEGER>DAMAGE_PHYSICAL"] = DamagePhysical;
-    mSearchKeys["<INTEGER>DAMAGE_POISON"] = DamagePoison;
-    mSearchKeys["<INTEGER>DAMAGE_FIRE"] = DamageFire;
-    mSearchKeys["<INTEGER>DAMAGE_ICE"] = DamageIce;
-    mSearchKeys["<INTEGER>DAMAGE_ELECTRIC"] = DamageElectric;
-    mSearchKeys["<INTEGER>MINDAMAGE"] = MinDamage;
-    mSearchKeys["<INTEGER>MAXDAMAGE"] = MaxDamage;
-    mSearchKeys["<FLOAT>DEVIATION_FROM_30FPS"] = DeviationFrom30FPS;
-    mSearchKeys["<INTEGER>LEVEL"] = Level;
-    mSearchKeys["<INTEGER>LEVEL_REQUIRED"] = LevelRequired;
-    mSearchKeys["<INTEGER>SPEED_DMG_MOD"] = SpeedDmgMod;
-    mSearchKeys["<INTEGER>RARITY_DMG_MOD"] = RarityDmgMod;
-    mSearchKeys["<STRING>SET"] = Set;
 }
 
 ItemDatFileParser::~ItemDatFileParser()

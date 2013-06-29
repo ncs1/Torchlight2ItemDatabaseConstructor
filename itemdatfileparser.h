@@ -32,41 +32,6 @@ private:
     QDir mDatFilesFolder;
 
     qint32 mNumFilesProcessed;
-
-    enum LineKeys
-    {
-        BaseFile,
-        UnitGuid,
-        RequiredClassOpeningTag,
-        RequiredClassClosingTag,
-        UnitType,
-        Name,
-        DisplayName,
-        Description,
-        StrengthRequired,
-        DexterityRequired,
-        DefenseRequired,
-        MagicRequired,
-        Speed,
-        DamagePhysical,
-        DamagePoison,
-        DamageFire,
-        DamageIce,
-        DamageElectric,
-        MinDamage,
-        MaxDamage,
-        DeviationFrom30FPS,
-        Level,
-        LevelRequired,
-        SpeedDmgMod,
-        RarityDmgMod,
-        Set
-    };
-
-    QHash<QString, ItemDatFileParser::LineKeys> mSearchKeys;
-
-
-
     
 };
 
